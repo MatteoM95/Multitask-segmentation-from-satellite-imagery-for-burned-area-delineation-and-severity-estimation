@@ -1,0 +1,26 @@
+# dataloader and sampler
+'--model_name', "resnet50",
+'--crop_size', '512',
+'--stride', '256',
+'--batch_size', '12',
+'--sample_per_epoch', '100',
+
+'--num_workers', '0', 
+'--use_gpu', 'True',
+
+# loss and optimzer
+'--learning_rate', '0.001', 
+'--optimizer', 'sgd', # rmsprop, sgd, adam
+'--loss', 'bce', # dice or crossentropy
+
+
+# epochs
+'--num_epochs', '100', #100
+'--epoch_start_i', '0', 
+'--validation_step', '2',
+'--checkpoint_step', '100',
+
+# model path
+'--pretrained_model_path', '', 
+'--save_model_path', 'models/',
+'--tensorboard_path', "_runs/CEMS_trainer4", 

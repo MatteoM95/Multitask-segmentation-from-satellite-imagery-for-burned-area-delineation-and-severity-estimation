@@ -1,0 +1,50 @@
+{
+    "encoder_name": "resnet50",
+    "segmenation_network": "unet",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 12,
+    "sample_per_epoch": 1200,
+    "burn_prop_batch": 0.7,
+    "burn_area_prop": 0.4,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0003,
+    "optimizer": "adamw",
+    "loss": "bce",
+    "num_epochs": 80,
+    "epoch_start_i": 0,
+    "checkpoint_step": 100,
+    "validation_step": 5,
+    "dataset_CSV_folder": "dataset/cross_validation/",
+    "pretrained_model_path": "",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_tb_runs/",
+    "date": "20230325_15",
+    "seed": 42,
+    "test_folds": [
+        5
+    ],
+    "time_execution_in_hours": "-2 days, 12:00:00",
+    "test_IOU": 0.5139403343200684,
+    "test_F1": 0.6789440512657166,
+    "confusion_matrix": {
+        "TP": 119980385,
+        "TN": 6912966,
+        "FP": 404168,
+        "FN": 6133777
+    },
+    "precision [0,1]": [
+        0.9966426921899191,
+        0.5298614374484114
+    ],
+    "recall [0,1]": [
+        0.951363297327385,
+        0.9447641658605678
+    ],
+    "f1 [0,1]": [
+        0.9734767582865493,
+        0.6789439948002043
+    ],
+    "accuracy": 0.9510014127420302
+}

@@ -1,0 +1,81 @@
+{
+    "mode": "GRA",
+    "encoder_name": "resnet50",
+    "segmenation_network": "unet",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 12,
+    "sample_per_epoch": 240,
+    "burn_prop_batch": 0.6,
+    "burn_area_prop": 0.3,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0003,
+    "optimizer": "adamw",
+    "loss": "bce",
+    "lr_policy": "ReduceLROnPlateau",
+    "num_epochs": 50,
+    "epoch_start_i": 0,
+    "checkpoint_step": 500,
+    "validation_step": 2,
+    "dataset_CSV_folder": "dataset/cross_validation/",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_tb_runs/",
+    "model_checkpoint": null,
+    "checkpoint_folder_path": "checkpoints/",
+    "date": "0509_16",
+    "seed": 42,
+    "test_folds": [
+        0
+    ],
+    "time_execution_in_minutes": "409",
+    "test_IOU_delineation": 0.8536091446876526,
+    "test_F1_delineation": 0.9210238456726074,
+    "test_F1_severity": [
+        0.999356553602813,
+        0.1023868697692819,
+        0.17949658449216663,
+        0.2058661159009,
+        0.0
+    ],
+    "test_IoU_severity": [
+        0.976814820345332,
+        0.06014391975883721,
+        0.11917505926491759,
+        0.153688697870488,
+        0.0
+    ],
+    "test_Recall_severity": [
+        0.9836170499096186,
+        0.2671245237453299,
+        0.34310066795048133,
+        0.19208030283623,
+        0.0
+    ],
+    "test_Precision_severity": [
+        1.0165890062670233,
+        0.0899998249004643,
+        0.15008658559243468,
+        0.3043420979117256,
+        0.0
+    ],
+    "confusion_matrix": {
+        "TP": 213440052,
+        "TN": 41414351,
+        "FP": 1480172,
+        "FN": 5622240
+    },
+    "precision_Delineation_[0,1]": [
+        0.9931129236120655,
+        0.8804709295365389
+    ],
+    "recall_Delineation_[0,1]": [
+        0.9743349713514364,
+        0.9654927506712221
+    ],
+    "f1_Delineation_[0,1]": [
+        0.9836343360892447,
+        0.9210238627756797
+    ],
+    "accuracy_Delineation": 0.9728870882782721
+}

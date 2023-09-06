@@ -1,0 +1,81 @@
+{
+    "mode": "GRA",
+    "encoder_name": "resnet50",
+    "segmenation_network": "unet",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 12,
+    "sample_per_epoch": 240,
+    "burn_prop_batch": 0.6,
+    "burn_area_prop": 0.3,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0003,
+    "optimizer": "adamw",
+    "loss": "bce",
+    "lr_policy": "ReduceLROnPlateau",
+    "num_epochs": 50,
+    "epoch_start_i": 0,
+    "checkpoint_step": 500,
+    "validation_step": 2,
+    "dataset_CSV_folder": "dataset/cross_validation/",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_tb_runs/",
+    "model_checkpoint": null,
+    "checkpoint_folder_path": "checkpoints/",
+    "date": "0509_19",
+    "seed": 42,
+    "test_folds": [
+        0
+    ],
+    "time_execution_in_minutes": "392",
+    "test_IOU_delineation": 0.8663123846054077,
+    "test_F1_delineation": 0.9283680319786072,
+    "test_F1_severity": [
+        0.4499715104991718,
+        0.016163377168497767,
+        0.16919776470467626,
+        0.31765920185120994,
+        2.574124961470104e-05
+    ],
+    "test_IoU_severity": [
+        0.33148421162714165,
+        0.008587738496977748,
+        0.10417939343953884,
+        0.23460365988483736,
+        1.2884222703007484e-05
+    ],
+    "test_Recall_severity": [
+        0.33154193529360854,
+        0.37994068738354225,
+        0.31244273698984387,
+        0.3811784317099765,
+        1.2886390625405264e-05
+    ],
+    "test_Precision_severity": [
+        1.0235577233683573,
+        0.009516185041940692,
+        0.15443292347669774,
+        0.32898968567214315,
+        0.010519967837041008
+    ],
+    "confusion_matrix": {
+        "TP": 214356892,
+        "TN": 41236402,
+        "FP": 1658121,
+        "FN": 4705400
+    },
+    "precision_Delineation_[0,1]": [
+        0.9923240474031312,
+        0.8975791154208536
+    ],
+    "recall_Delineation_[0,1]": [
+        0.9785202649116809,
+        0.9613442256952012
+    ],
+    "f1_Delineation_[0,1]": [
+        0.9853738153498951,
+        0.9283680296320227
+    ],
+    "accuracy_Delineation": 0.9757077478591271
+}

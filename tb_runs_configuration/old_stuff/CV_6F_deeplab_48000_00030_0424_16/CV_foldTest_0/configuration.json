@@ -1,0 +1,52 @@
+{
+    "encoder_name": "resnet50",
+    "segmenation_network": "deeplab",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 8,
+    "sample_per_epoch": 480,
+    "burn_prop_batch": 0.6,
+    "burn_area_prop": 0.3,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0003,
+    "optimizer": "adamw",
+    "loss": "bce",
+    "lr_policy": "ReduceLROnPlateau",
+    "num_epochs": 100,
+    "epoch_start_i": 0,
+    "checkpoint_step": 2000,
+    "validation_step": 5,
+    "dataset_CSV_folder": "dataset/cross_validation/",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_tb_runs/",
+    "model_checkpoint": null,
+    "checkpoint_folder_path": "checkpoints/",
+    "date": "20230424_16",
+    "seed": 42,
+    "test_folds": [
+        0
+    ],
+    "time_execution_in_hours": "-1 day, 8:00:00",
+    "test_IOU": 0.8174675703048706,
+    "test_F1": 0.899567723274231,
+    "confusion_matrix": {
+        "TP": 207142453,
+        "TN": 38908968,
+        "FP": 1902898,
+        "FN": 6785090
+    },
+    "precision [0,1]": [
+        0.9908972001008528,
+        0.8515104524093702
+    ],
+    "recall [0,1]": [
+        0.9682832331692792,
+        0.9533739035603028
+    ],
+    "f1 [0,1]": [
+        0.9794597050467257,
+        0.8995677105304373
+    ],
+    "accuracy": 0.9658946056516917
+}

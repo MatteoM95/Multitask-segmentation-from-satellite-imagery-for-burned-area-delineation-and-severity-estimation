@@ -1,0 +1,23 @@
+{
+    "model_name": "resnet50",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 12,
+    "sample_per_epoch": 120,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0001,
+    "optimizer": "sgd",
+    "loss": "bce",
+    "num_epochs": 99,
+    "epoch_start_i": 0,
+    "checkpoint_step": 100,
+    "validation_step": 3,
+    "dataset_CSV_folder": "dataset/balanced/",
+    "pretrained_model_path": "",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_runs/",
+    "date": "20230312_01",
+    "test_IOU": 0.4409496486186981,
+    "test_F1": 0.6120263934135437
+}

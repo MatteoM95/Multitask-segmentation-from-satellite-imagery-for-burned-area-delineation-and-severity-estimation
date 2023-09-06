@@ -1,0 +1,131 @@
+{
+    "mode": "GRA",
+    "encoder_name": "resnet50",
+    "segmenation_network": "deeplab",
+    "crop_size": 512,
+    "stride": 256,
+    "batch_size": 8,
+    "sample_per_epoch": 240,
+    "burn_prop_batch": 0.6,
+    "burn_area_prop": 0.3,
+    "num_workers": 0,
+    "use_gpu": true,
+    "learning_rate": 0.0003,
+    "optimizer": "adamw",
+    "loss": "dice",
+    "lr_policy": "ReduceLROnPlateau",
+    "num_epochs": 100,
+    "epoch_start_i": 0,
+    "checkpoint_step": 500,
+    "validation_step": 2,
+    "dataset_CSV_folder": "dataset/cross_validation/",
+    "save_model_path": "models/",
+    "tensorboard_folder": "_tb_runs/",
+    "model_checkpoint": null,
+    "checkpoint_folder_path": "checkpoints/",
+    "date": "0522_00",
+    "seed": 42,
+    "validation_folds": [
+        5
+    ],
+    "Time_execution_in_minutes": "529",
+    "Test_IOU_delineation": 0.7686854004859924,
+    "Test_F1_delineation": 0.8692166805267334,
+    "Confusion_Matrix_Delineation": [
+        [
+            209776206,
+            9231518
+        ],
+        [
+            2813283,
+            40026281
+        ]
+    ],
+    "Precision_Delineation_[0,1]": [
+        0.9867665940906419,
+        0.8125876878908048
+    ],
+    "Recall_Delineation_[0,1]": [
+        0.9578484364323151,
+        0.9343297938326356
+    ],
+    "F1_Delineation_[0,1]": [
+        0.9720924958799491,
+        0.8692166571587939
+    ],
+    "Accuracy_Delineation": 0.9540006654565771,
+    "Test_RMSE": 0.13573539957043626,
+    "Test_F1_Severity": [
+        0.9658297896385193,
+        0.11425358057022095,
+        0.19452586770057678,
+        0.5320435762405396,
+        0.12025553733110428
+    ],
+    "Test_IoU_Severity": [
+        0.9339174628257751,
+        0.060587987303733826,
+        0.10774226486682892,
+        0.36243826150894165,
+        0.06397440284490585
+    ],
+    "Confusion_Matrix_Severity": [
+        [
+            206608094,
+            4331792,
+            3358975,
+            4746921,
+            258654
+        ],
+        [
+            611747,
+            538156,
+            849562,
+            721348,
+            7425
+        ],
+        [
+            408032,
+            661342,
+            1738703,
+            4447270,
+            22504
+        ],
+        [
+            609291,
+            779667,
+            3037075,
+            14331124,
+            502938
+        ],
+        [
+            293825,
+            381184,
+            1614151,
+            10365234,
+            918986
+        ]
+    ],
+    "Precision_Severity_[0,1,2,3,4]": [
+        0.9907788525378355,
+        0.08041611795089194,
+        0.1640523260630359,
+        0.41405196600463706,
+        0.5372594207448435
+    ],
+    "Recall_Severity_[0,1,2,3,4]": [
+        0.9421063147122113,
+        0.19725405188257036,
+        0.23890335210215213,
+        0.744083764903548,
+        0.0677050226251678
+    ],
+    "F1_Severity_[0,1,2,3,4]": [
+        0.9658297650317291,
+        0.114253577271148,
+        0.19452586346505266,
+        0.5320435895520627,
+        0.12025553447234989
+    ],
+    "Accuracy_Severity": 0.8550074119567871
+}
